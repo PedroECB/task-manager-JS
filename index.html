@@ -13,10 +13,23 @@
     <div class="main">
         <h1 class="main-text">Gerenciador de Tarefas <span class="js-text"> JS</span></h1>
             <div class="form">
-                <input type="text" name="tarefa" id="cTarefa" maxlength="45"><button id="buttonAdd">+ Add</button>
-                <small class="aviso">Preencha o campo de tarefa</small>
+                <form action="" method="POST" id="form-square">
+                    <input type="text" name="tarefa" id="cTarefa" maxlength="45"><button id="buttonAdd">+ Add</button>
+                    <small class="aviso">Preencha o campo de tarefa</small>
+                </form>
+            </div>
+                <h4>Clique na tarefa para marcar como realizada</h3>
+            <div class="tasks">
+                <table>
+                    <tbody id="table-body">
+                        <tr class="task-row"><td class="task">Estudar para prova</td><td><button class="button-remove">Remover</button></td></tr>
+                        <tr class="task-row"><td class="task">Estudar React</td><td><button class="button-remove">Remover</button></td></tr>
+                        <tr class="task-row"><td class="task">Terminar pesquisa científica</td><td><button class="button-remove">Remover</button></td></tr>
+                        <tr class="task-row"><td class="task">Jogar futebol</td><td><button class="button-remove">Remover</button></td></tr>
+                    </tbody>
+                </table>
             </div>
     </div>
-    
+<script src="js/script.js"></script>
 </body>
 </html>
