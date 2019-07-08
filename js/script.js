@@ -50,12 +50,15 @@
     
         for(let i=0; i<$tdsTasks.length;i++){
             $tdsTasks[i].addEventListener('click', function(event){
+                event.stopImmediatePropagation()
                 $tdsTasks[i].classList.toggle('through')
             })
 
             $buttonsRemove[i].addEventListener('click', function(evt){
+                evt.stopImmediatePropagation()
                 console.log('Excluimos a tarefa: '+$trs[i].innerText)
                 $table.removeChild($trs[i])
+                
             })
         }
     }
